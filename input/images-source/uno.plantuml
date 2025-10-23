@@ -1,0 +1,12 @@
+@startuml ejemplo-transaccion
+
+Participant "Origen"  as Origen
+Participant "Transformador"  as Transformador
+Participant "Destino"  as Destino
+
+Origen -> Transformador: POST Data
+Transformador -> Destino: Transform to Patient
+Destino --> Transformador: Store Patient
+Transformador --> Origen: {201 Status Code}
+
+@enduml
