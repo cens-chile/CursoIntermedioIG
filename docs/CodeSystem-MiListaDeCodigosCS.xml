@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="MiListaDeCodigosCS"/>
+  <language value="en-US"/>
+  <text>
+    <status value="generated"/><div xml:lang="en-US" xmlns="http://www.w3.org/1999/xhtml" lang="en-US"><p class="res-header-id"><b>Generated Narrative: SistemaDeCodigos MiListaDeCodigosCS</b></p><a name="MiListaDeCodigosCS"> </a><a name="hcMiListaDeCodigosCS"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Language: en-US</p></div><p>This case-sensitive code system <code>http://example.org/curso/CodeSystem/MiListaDeCodigosCS</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">1<a name="MiListaDeCodigosCS-1"> </a></td><td>Left arm</td></tr><tr><td style="white-space:nowrap">2<a name="MiListaDeCodigosCS-2"> </a></td><td>Right arm</td></tr><tr><td style="white-space:nowrap">3<a name="MiListaDeCodigosCS-3"> </a></td><td>Left leg</td></tr><tr><td style="white-space:nowrap">4<a name="MiListaDeCodigosCS-4"> </a></td><td>Right leg</td></tr><tr><td style="white-space:nowrap">5<a name="MiListaDeCodigosCS-5"> </a></td><td>Oral route</td></tr><tr><td style="white-space:nowrap">6<a name="MiListaDeCodigosCS-6"> </a></td><td>Unknown</td></tr></table></div>
+  </text>
+  <url value="http://example.org/curso/CodeSystem/MiListaDeCodigosCS"/>
+  <version value="0.1.0"/>
+  <name value="MiListaDeCodigosCS"/>
+  <title value="Mi lista de Códigos"/>
+  <status value="active"/>
+  <experimental value="true"/>
+  <date value="2023-11-07"/>
+  <publisher value="CENS"/>
+  <contact>
+    <name value="CENS"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://cens.cl"/>
+    </telecom>
+  </contact>
+  <description value="Mi Lista de Codigos Especial Propia"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="CL"/>
+      <display value="Chile"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="6"/>
+  <concept>
+    <code value="1"/>
+    <display value="Left arm"/>
+  </concept>
+  <concept>
+    <code value="2"/>
+    <display value="Right arm"/>
+  </concept>
+  <concept>
+    <code value="3"/>
+    <display value="Left leg"/>
+  </concept>
+  <concept>
+    <code value="4"/>
+    <display value="Right leg"/>
+  </concept>
+  <concept>
+    <code value="5"/>
+    <display value="Oral route"/>
+  </concept>
+  <concept>
+    <code value="6"/>
+    <display value="Unknown"/>
+  </concept>
+</CodeSystem>

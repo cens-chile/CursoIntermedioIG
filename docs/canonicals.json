@@ -1,0 +1,51 @@
+[
+  {
+    "id" : "MiListaDeCodigosCS",
+    "type" : "CodeSystem",
+    "url" : "http://example.org/curso/CodeSystem/MiListaDeCodigosCS",
+    "version" : "0.1.0",
+    "name" : "MiListaDeCodigosCS"
+  },
+  {
+    "id" : "fhir.example.curso",
+    "type" : "ImplementationGuide",
+    "url" : "http://example.org/curso/ImplementationGuide/fhir.example.curso",
+    "version" : "0.1.0",
+    "name" : "CursoIG"
+  },
+  {
+    "id" : "birthPlace-extension",
+    "type" : "SearchParameter",
+    "url" : "http://example.org/curso/SearchParameter/birthPlace-extension",
+    "version" : "0.1.0",
+    "name" : "birthPlace"
+  },
+  {
+    "id" : "CoreClPatientDerivado",
+    "type" : "StructureDefinition",
+    "url" : "http://example.org/curso/StructureDefinition/CoreClPatientDerivado",
+    "version" : "0.1.0",
+    "name" : "CoreClPatientDerivado"
+  },
+  {
+    "id" : "example-patient-profile",
+    "type" : "StructureDefinition",
+    "url" : "http://example.org/curso/StructureDefinition/example-patient-profile",
+    "version" : "0.1.0",
+    "name" : "ExamplePatientProfile"
+  },
+  {
+    "id" : "fecha-contacto",
+    "type" : "StructureDefinition",
+    "url" : "http://example.org/curso/StructureDefinition/fecha-contacto",
+    "version" : "0.1.0",
+    "name" : "FechaContacto"
+  },
+  {
+    "id" : "MiListaDeCodigosVS",
+    "type" : "ValueSet",
+    "url" : "http://example.org/curso/ValueSet/MiListaDeCodigosVS",
+    "version" : "0.1.0",
+    "name" : "MiListaDeCodigosVS"
+  }
+]

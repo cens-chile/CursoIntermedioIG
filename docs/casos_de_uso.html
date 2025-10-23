@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Casos De Uso - Este es el título de la guía en | R4 v0.1.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"2"}
+    h3,h4,h5,h6{--heading-prefix:"2"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Este es el título de la guía en | R4</span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - ci-build
+
+
+
+  <img alt="Chile flag" src="assets/images/chl.svg" height="16" title="Chile"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+  <li>
+    <a href="transacciones.html">Transacciones</a>
+  </li>
+  <li>
+    <a href="casos_de_uso.html">Casos de Uso</a>
+  </li>
+  <li>
+    <a href="downloads.html">Downlodas</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Casos De Uso</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">Este es el título de la guía en | R4 - Local Development build (v0.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='http://example.org/curso/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Casos De Uso</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div>
+<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
+</div>
+<h1 id="casos-de-uso">Casos de Uso</h1>
+<p><img src="logo.png" alt="Cens Logo" width="300px" style="float:none; margin: 0px 0px 0px 0px;" /></p>
+
+<ul>
+  <li>Este documento presenta ejemplos prácticos de uso.</li>
+  <li>Describe escenarios comunes para la implementación.</li>
+  <li>Los casos ayudan a entender requisitos y flujos.</li>
+  <li>Incluye pasos esenciales y actores involucrados.</li>
+  <li>Muestra interacciones entre sistemas y usuarios.</li>
+  <li>Ayuda a identificar puntos de integración.</li>
+  <li>Facilita la priorización de funcionalidades.</li>
+  <li>Sirve de base para pruebas y validación.</li>
+  <li>Simplifica la comunicación con stakeholders.</li>
+  <li>Permite estimar esfuerzo y riesgos.</li>
+  <li>Incluye ejemplos de datos y entradas esperadas.</li>
+  <li>Describe resultados y condiciones de éxito.</li>
+  <li>Considera excepciones y manejo de errores.</li>
+  <li>Propone métricas para medir resultados.</li>
+  <li>Ofrece recomendaciones de implementación.</li>
+  <li>Es un recurso para diseñadores y desarrolladores.</li>
+  <li>Se puede ampliar con diagramas y casos reales.</li>
+  <li>Actualizar según evolución del proyecto.</li>
+</ul>
+
+<div>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" data-diagram-type="SEQUENCE" height="223px" preserveAspectRatio="none" style="width:356px;height:223px;background:#FFFFFF;" version="1.1" viewBox="0 0 356 223" width="356px" zoomAndPan="magnify"><defs /><g><g><title>Origen</title><rect fill="#000000" fill-opacity="0.00000" height="146.8241" width="8" x="30.7429" y="39.0679" /><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="34" x2="34" y1="39.0679" y2="185.892" /></g><g><title>Transformador</title><rect fill="#000000" fill-opacity="0.00000" height="146.8241" width="8" x="163.176" y="39.0679" /><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="166.3502" x2="166.3502" y1="39.0679" y2="185.892" /></g><g><title>Destino</title><rect fill="#000000" fill-opacity="0.00000" height="146.8241" width="8" x="313.7701" y="39.0679" /><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="317.4652" x2="317.4652" y1="39.0679" y2="185.892" /></g><g class="participant participant-head" data-participant="Origen"><rect fill="#E2E2F0" height="33.0679" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="59.4858" x="5" y="5" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="45.4858" x="12" y="26.9659">Origen</text></g><g class="participant participant-tail" data-participant="Origen"><rect fill="#E2E2F0" height="33.0679" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="59.4858" x="5" y="184.892" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="45.4858" x="12" y="206.8579">Origen</text></g><g class="participant participant-head" data-participant="Transformador"><rect fill="#E2E2F0" height="33.0679" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="113.6516" x="110.3502" y="5" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="99.6516" x="117.3502" y="26.9659">Transformador</text></g><g class="participant participant-tail" data-participant="Transformador"><rect fill="#E2E2F0" height="33.0679" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="113.6516" x="110.3502" y="184.892" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="99.6516" x="117.3502" y="206.8579">Transformador</text></g><g class="participant participant-head" data-participant="Destino"><rect fill="#E2E2F0" height="33.0679" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="64.6098" x="285.4652" y="5" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="50.6098" x="292.4652" y="26.9659">Destino</text></g><g class="participant participant-tail" data-participant="Destino"><rect fill="#E2E2F0" height="33.0679" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="64.6098" x="285.4652" y="184.892" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="50.6098" x="292.4652" y="206.8579">Destino</text></g><g class="message" data-participant-1="Origen" data-participant-2="Transformador"><polygon fill="#181818" points="155.176,68.7739,165.176,72.7739,155.176,76.7739,159.176,72.7739" style="stroke:#181818;stroke-width:1;" /><line style="stroke:#181818;stroke-width:1;" x1="34.7429" x2="161.176" y1="72.7739" y2="72.7739" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="64.5321" x="41.7429" y="66.9649">POST Data</text></g><g class="message" data-participant-1="Transformador" data-participant-2="Destino"><polygon fill="#181818" points="305.7701,100.4799,315.7701,104.4799,305.7701,108.4799,309.7701,104.4799" style="stroke:#181818;stroke-width:1;" /><line style="stroke:#181818;stroke-width:1;" x1="167.176" x2="311.7701" y1="104.4799" y2="104.4799" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="126.5941" x="174.176" y="98.6709">Transform to Patient</text></g><g class="message" data-participant-1="Destino" data-participant-2="Transformador"><polygon fill="#181818" points="178.176,132.186,168.176,136.186,178.176,140.186,174.176,136.186" style="stroke:#181818;stroke-width:1;" /><line style="stroke:#181818;stroke-width:1;stroke-dasharray:2.0,2.0;" x1="172.176" x2="316.7701" y1="136.186" y2="136.186" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="79.0401" x="184.176" y="130.377">Store Patient</text></g><g class="message" data-participant-1="Transformador" data-participant-2="Origen"><polygon fill="#181818" points="45.7429,163.892,35.7429,167.892,45.7429,171.892,41.7429,167.892" style="stroke:#181818;stroke-width:1;" /><line style="stroke:#181818;stroke-width:1;stroke-dasharray:2.0,2.0;" x1="39.7429" x2="166.176" y1="167.892" y2="167.892" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="108.4331" x="51.7429" y="162.083">{201 Status Code}</text></g></g></svg>
+</div>
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://cens.cl">CENS</a>.  Package fhir.example.curso#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Oct 22, 2025 17:39-0300">2025-10-22</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

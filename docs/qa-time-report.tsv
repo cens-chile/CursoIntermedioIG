@@ -1,0 +1,9 @@
+Source File	Size	loadResources	load	generateSnapshots	load-configure	scan	loadDepInfo	loadInfo	checkR4R4B	generateNarratives	validate	loadLists	checkConformanceResources	checkConformanceResources2	checkConformanceResources3	generateLogicalMaps	validateExpressions	scanForUsageStats	checkURLsUnique	processProvenanceDetails	generate1	generate2	generateLogicals	makeDependencies	generateExampleZip	generateValidationPack	scanProfilesForR5	scanExamplesForR5
+/fsh-generated/resources/ImplementationGuide-fhir.example.curso.json	3704	-	0	0	0	0	0	0	7	82	0	0	0	0	0	0	0	1	0	0	139	70	0	0	0	3	0	0
+fsh-generated/resources/CodeSystem-MiListaDeCodigosCS.json	816	18	0	0	1	0	0	0	0	17	0	0	1	0	0	0	0	0	0	0	36	388	0	0	0	0	0	0
+fsh-generated/resources/Patient-PatientExampleCoreCl.json	902	17	0	0	0	0	0	0	0	406	0	0	0	0	0	0	0	0	0	0	37	14	0	0	1	0	0	0
+fsh-generated/resources/SearchParameter-birthPlace-extension.json	898	15	0	0	0	0	0	0	0	25	0	0	0	0	0	0	0	0	0	0	29	8	0	0	0	0	0	0
+fsh-generated/resources/StructureDefinition-CoreClPatientDerivado.json	3884	16	0	158	0	0	0	1	1	115	0	0	1	0	0	1	0	5	0	0	468	1453	0	0	0	17	0	2
+fsh-generated/resources/StructureDefinition-example-patient-profile.json	2122	24	0	60	0	0	0	0	0	34	0	0	0	0	0	0	0	1	0	0	168	465	0	0	0	5	0	0
+fsh-generated/resources/StructureDefinition-fecha-contacto.json	1238	6	0	23	0	0	0	0	0	24	0	0	0	0	0	0	0	0	0	0	68	83	0	0	0	2	1	0
+fsh-generated/resources/ValueSet-MiListaDeCodigosVS.json	423	4	0	0	1	0	0	0	0	46	0	1	0	0	0	0	0	0	0	0	29	74	0	0	0	0	0	0

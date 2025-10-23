@@ -1,0 +1,36 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "MiListaDeCodigosVS",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ConjuntoValores / ConjuntoDeValores MiListaDeCodigosVS</b></p><a name=\"MiListaDeCodigosVS\"> </a><a name=\"hcMiListaDeCodigosVS\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-MiListaDeCodigosCS.html\"><code>http://example.org/curso/CodeSystem/MiListaDeCodigosCS</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version &#x1F4E6;0.1.0</span></li></ul></div>"
+  },
+  "url" : "http://example.org/curso/ValueSet/MiListaDeCodigosVS",
+  "version" : "0.1.0",
+  "name" : "MiListaDeCodigosVS",
+  "title" : "Mi lista de Códigos",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2025-10-22T17:38:42-03:00",
+  "publisher" : "CENS",
+  "contact" : [{
+    "name" : "CENS",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://cens.cl"
+    }]
+  }],
+  "description" : "Mi Lista de Codigos Especial",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "CL",
+      "display" : "Chile"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "http://example.org/curso/CodeSystem/MiListaDeCodigosCS"
+    }]
+  }
+}

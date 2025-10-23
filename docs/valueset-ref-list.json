@@ -1,0 +1,13 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://example.org/curso/ValueSet/MiListaDeCodigosVS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "MiListaDeCodigosVS",
+      "title" : "Mi lista de Códigos",
+      "description" : "Mi Lista de Codigos Especial",
+      "systems" : ["http://example.org/curso/CodeSystem/MiListaDeCodigosCS"]
+    }
+  ]
+}
